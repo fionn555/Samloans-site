@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Easy - MG Finance Advantage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: #ffffff; color: #333; }
+    header { background-color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; }
+    nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x600/?car,finance') center/cover; color: white; text-align: center; padding: 100px 20px; }
+    .hero h1 { font-size: 48px; }
+    .hero p { font-size: 20px; margin-bottom: 20px; }
+    .btn { background-color: #f04e23; color: white; padding: 12px 24px; margin: 5px; border: none; cursor: pointer; border-radius: 4px; font-size: 16px; }
+    .features, .products, .steps { padding: 60px 20px; text-align: center; background-color: #fafafa; }
+    .feature-item, .product-card, .step { margin: 20px auto; max-width: 600px; }
+    .feature-item h3, .product-card h3, .step h3 { color: #f04e23; }
+    .contact { padding: 40px 20px; text-align: center; background-color: #fff; }
+    .contact form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; }
+    .contact input, .contact textarea { padding: 10px; margin: 10px 0; font-size: 16px; }
+    .contact button { background-color: #f04e23; color: white; padding: 12px; border: none; cursor: pointer; }
+    .footer { background-color: #333; color: #fff; text-align: center; padding: 30px 20px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Loan Easy</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Solutions</a>
+      <a href="#contact">Contact</a>
+      <a href="#">MG Motor</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>MG Finance Advantage – Drive Now, Pay Smart</h1>
+    <p>Fast, integrated financing for MG Motor customers, powered by Loan Easy.</p>
+    <button class="btn" onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' });">Explore Options</button>
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Apply Now</button>
+  </section>
+
+  <section class="features">
+    <div class="feature-item"><h3>✅ 30-second Approvals</h3><p>AI-powered fast decision system</p></div>
+    <div class="feature-item"><h3>✅ Zero Down Payment</h3><p>Flexible plans to drive now, pay later</p></div>
+    <div class="feature-item"><h3>✅ Seamless Experience</h3><p>From car selection to contract signing in minutes</p></div>
+    <div class="feature-item"><h3>✅ Trusted Partner</h3><p>$5B+ loans facilitated, 30,000+ clients</p></div>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Our Car Loan Solutions</h2>
+    <div class="product-card"><h3>Zero Down Payment Loan</h3><p>Drive away without upfront cost.</p></div>
+    <div class="product-card"><h3>Trade-In Finance Plan</h3><p>Upgrade with ease – finance your new MG with your current car's value.</p></div>
+    <div class="product-card"><h3>MG Business Lease Program</h3><p>Flexible fleet finance for SMEs and corporates.</p></div>
+  </section>
+
+  <section class="steps">
+    <h2>How It Works</h2>
+    <div class="step"><h3>Step 1: Online Application</h3></div>
+    <div class="step"><h3>Step 2: 30-Second Approval</h3></div>
+    <div class="step"><h3>Step 3: Instant Digital Contract</h3></div>
+    <div class="step"><h3>Step 4: Pick Up Your MG</h3></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/moqgkqya" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Loan Easy (info@samloans.com.au)</p>
+    <p>Level 10, 189 Kent Street, Sydney NSW 2000 | Phone: 02 8251 3222</p>
+    <p>In partnership with MG Motor Australia</p>
+  </footer>
+</body>
+</html>
