@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAM Loans - Professional Lending Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1600x600/?finance,house') center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .hero .btn {
+      background-color: #f04e23;
+      color: white;
+      padding: 12px 24px;
+      margin: 5px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 60px 20px;
+      background-color: #fafafa;
+    }
+    .service-card {
+      width: 280px;
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+    .service-card h3 {
+      color: #f04e23;
+    }
+    .contact {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .contact button {
+      background-color: #f04e23;
+      color: white;
+      padding: 12px;
+      border: none;
+      cursor: pointer;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>SAM Loans</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Professional Lending Services to Help You Achieve More</h1>
+    <p>Flexible solutions, fast approvals, more than mortgage</p>
+    <button class="btn" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">Explore Services</button>
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact Us</button>
+  </section>
+
+  <section class="services" id="services">
+    <div class="service-card">
+      <h3>Home Loans</h3>
+      <p>Flexible terms for homeowners and investors.</p>
+    </div>
+    <div class="service-card">
+      <h3>Business Loans</h3>
+      <p>Empowering growth with fast capital access.</p>
+    </div>
+    <div class="service-card">
+      <h3>Construction Loans</h3>
+      <p>Support for your building journey from start to finish.</p>
+    </div>
+    <div class="service-card">
+      <h3>Personal Loans</h3>
+      <p>Quick solutions for personal financial needs.</p>
+    </div>
+    <div class="service-card">
+      <h3>Car Loans</h3>
+      <p>Drive your dream with flexible car financing.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 SAM Loans (Credit Asset Management Ltd)</p>
+    <p>Level 10, 189 Kent Street, Sydney NSW 2000 | Phone: 02 8251 3222 | Email: info@samloans.com.au</p>
+  </footer>
+</body>
+</html>
